@@ -32,7 +32,6 @@ if (form){
   form.addEventListener('submit', e => {
     e.preventDefault();
     const data = Object.fromEntries(new FormData(form).entries());
-    // Replace with real endpoint or Netlify/Jamstack form handling
     console.log('Form submission', data);
     msg.textContent = 'Thanks — we’ll be in touch within one business day.';
     form.reset();
