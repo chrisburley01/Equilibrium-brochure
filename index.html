@@ -4,159 +4,85 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Equilibrium Consulting</title>
-  <meta name="description" content="Equilibrium Consulting — balanced strategy, operational excellence, and measurable impact." />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230c2340'/%3E%3Cpath d='M18 33c0-7.7 6.3-14 14-14 5.6 0 10.5 3.3 12.7 8.2h-6.1c-1.8-2-4.1-3.2-6.6-3.2-4.9 0-9 4.1-9 9s4.1 9 9 9c2.5 0 4.8-1.1 6.6-3.2h6.1C42.5 43.7 37.6 47 32 47c-7.7 0-14-6.3-14-14Z' fill='%23ffffff'/%3E%3C/svg%3E" />
+  <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#home" aria-label="Equilibrium Consulting">
-        <!-- Inline logo so it always shows -->
-        <svg class="logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="32" fill="#0c2340"/><path d="M18 33c0-7.7 6.3-14 14-14 5.6 0 10.5 3.3 12.7 8.2h-6.1c-1.8-2-4.1-3.2-6.6-3.2-4.9 0-9 4.1-9 9s4.1 9 9 9c2.5 0 4.8-1.1 6.6-3.2h6.1C42.5 43.7 37.6 47 32 47c-7.7 0-14-6.3-14-14Z" fill="#fff"/></svg>
-        <span>Equilibrium Consulting</span>
-      </a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
-      <nav class="nav" id="nav">
-        <a href="#services">Services</a>
-        <a href="#industries">Industries</a>
-        <a href="#insights">Insights</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="btn btn-sm">Contact</a>
-      </nav>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#home">
+      <img src="assets/logo.svg" alt="Equilibrium Consulting" class="logo" />
+      <span>Equilibrium Consulting</span>
+    </a>
+    <button class="hamburger" id="hamburger">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#team">Team</a>
+      <a href="#contact" class="btn">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <!-- Hero -->
+  <section class="hero">
+    <img src="assets/hero_strategy_meeting.jpg" alt="Strategy meeting" class="hero-img" />
+    <div class="hero-inner">
+      <h1>Turning complexity into clarity</h1>
+      <p>We help organisations achieve balanced growth through sharp strategy and practical execution.</p>
+      <a href="#contact" class="btn">Speak to us</a>
     </div>
-  </header>
+  </section>
 
-  <main id="home">
-    <section class="hero" role="banner" aria-label="Equilibrium hero">
-      <!-- If you later upload /assets/hero.jpg this will show automatically -->
-      <div class="hero-bg"></div>
-      <div class="hero-overlay"></div>
-      <div class="container hero-inner">
-        <h1>Turning complexity into clarity</h1>
-        <p>We help organisations achieve balanced growth through sharp strategy and practical execution.</p>
-        <div class="cta-group">
-          <a href="#contact" class="btn">Speak to us</a>
-          <a href="#services" class="btn btn-outline">Our services</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="section">
-      <div class="container">
-        <h2>Capabilities</h2>
-        <p class="section-lead">Impact-focused consulting across strategy, operations, and digital.</p>
-        <div class="cards grid-3">
-          <article class="card">
-            <h3>Strategy & Transformation</h3>
-            <p>Market entry, growth strategy, and transformation roadmaps that align ambition with execution.</p>
-            <ul>
-              <li>Corporate & portfolio strategy</li>
-              <li>Change & transformation</li>
-              <li>Cost-to-serve & pricing</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Operations & Supply Chain</h3>
-            <p>Lean operations, logistics optimisation, and performance uplift across the value chain.</p>
-            <ul>
-              <li>Network & inventory optimisation</li>
-              <li>Warehouse & transport efficiency</li>
-              <li>KPI dashboards & OTIF</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Digital & AI</h3>
-            <p>Pragmatic digital roadmaps, data strategy, and AI adoption that deliver measurable ROI.</p>
-            <ul>
-              <li>AI use cases & pilots</li>
-              <li>Automation & analytics</li>
-              <li>Technology selection</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="industries" class="section alt">
-      <div class="container">
-        <h2>Industries</h2>
-        <div class="chips">
-          <span class="chip">Logistics & Transport</span>
-          <span class="chip">Manufacturing</span>
-          <span class="chip">Consumer & Retail</span>
-          <span class="chip">Construction Products</span>
-          <span class="chip">Technology & SaaS</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="insights" class="section">
-      <div class="container">
-        <h2>Insights</h2>
-        <div class="grid-3 cards">
-          <article class="card mini">
-            <h4>Balancing growth with cash</h4>
-            <p>Five levers to improve working capital without stalling momentum.</p>
-            <a href="#contact" class="link">Read more →</a>
-          </article>
-          <article class="card mini">
-            <h4>AI in operations</h4>
-            <p>Where AI delivers real value today across warehouse and transport.</p>
-            <a href="#contact" class="link">Read more →</a>
-          </article>
-          <article class="card mini">
-            <h4>Cost-to-serve done right</h4>
-            <p>A practical blueprint for margin control and pricing clarity.</p>
-            <a href="#contact" class="link">Read more →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section alt">
-      <div class="container split">
-        <div>
-          <h2>About Equilibrium</h2>
-          <p>We blend analytical rigour with frontline pragmatism. Our teams work shoulder-to-shoulder with clients to deliver outcomes, not slideware.</p>
-        </div>
-        <div class="stats">
-          <div class="stat"><span class="num">15%+</span><span class="label">average EBITDA uplift</span></div>
-          <div class="stat"><span class="num">8–12 wks</span><span class="label">typical pilot window</span></div>
-          <div class="stat"><span class="num">99%</span><span class="label">client satisfaction</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Let’s talk</h2>
-        <form id="contactForm" class="contact-form" netlify>
-          <div class="grid-2">
-            <label>Full name<input type="text" name="name" required></label>
-            <label>Email<input type="email" name="email" required></label>
-          </div>
-          <label>Company<input type="text" name="company"></label>
-          <label>How can we help?<textarea name="message" rows="5" required></textarea></label>
-          <button type="submit" class="btn">Send</button>
-          <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© <span id="year"></span> Equilibrium Consulting</div>
-      <nav class="foot-nav">
-        <a href="#privacy">Privacy</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <!-- Capabilities -->
+  <section id="capabilities" class="section">
+    <div class="container cap-grid">
+      <article class="cap">
+        <img src="assets/warehouse_ops.jpg" alt="Warehouse operations" />
+        <h3>Operations & Supply Chain</h3>
+        <p>Lean operations, logistics optimisation, and performance uplift across the value chain.</p>
+      </article>
+      <article class="cap">
+        <img src="assets/transport_logistics.jpg" alt="Transport logistics" />
+        <h3>Transport & Logistics</h3>
+        <p>End-to-end optimisation for network, inventory and fleet utilisation.</p>
+      </article>
+      <article class="cap">
+        <img src="assets/digital_dashboard.jpg" alt="Digital dashboard" />
+        <h3>Digital & AI</h3>
+        <p>Pragmatic digital roadmaps, data strategy, and AI adoption that deliver measurable ROI.</p>
+      </article>
     </div>
-  </footer>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- Team -->
+  <section id="team" class="section">
+    <div class="container">
+      <h2>Leadership</h2>
+      <img src="assets/team_leadership.jpg" alt="Leadership team" class="team-img" />
+      <p>Our partners bring deep expertise across strategy, operations and digital.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact us</h2>
+      <form id="contactForm">
+        <label>Name <input type="text" name="name" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>Message <textarea name="message" required></textarea></label>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© Equilibrium Consulting</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
