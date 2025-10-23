@@ -8,13 +8,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="assets/logo.svg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230c2340'/%3E%3Cpath d='M18 33c0-7.7 6.3-14 14-14 5.6 0 10.5 3.3 12.7 8.2h-6.1c-1.8-2-4.1-3.2-6.6-3.2-4.9 0-9 4.1-9 9s4.1 9 9 9c2.5 0 4.8-1.1 6.6-3.2h6.1C42.5 43.7 37.6 47 32 47c-7.7 0-14-6.3-14-14Z' fill='%23ffffff'/%3E%3C/svg%3E" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#home">
-        <img src="assets/logo.svg" alt="Equilibrium Consulting" class="logo" />
+      <a class="brand" href="#home" aria-label="Equilibrium Consulting">
+        <!-- Inline logo so it always shows -->
+        <svg class="logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="32" fill="#0c2340"/><path d="M18 33c0-7.7 6.3-14 14-14 5.6 0 10.5 3.3 12.7 8.2h-6.1c-1.8-2-4.1-3.2-6.6-3.2-4.9 0-9 4.1-9 9s4.1 9 9 9c2.5 0 4.8-1.1 6.6-3.2h6.1C42.5 43.7 37.6 47 32 47c-7.7 0-14-6.3-14-14Z" fill="#fff"/></svg>
         <span>Equilibrium Consulting</span>
       </a>
       <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
@@ -30,7 +31,9 @@
 
   <main id="home">
     <section class="hero" role="banner" aria-label="Equilibrium hero">
-      <div class="hero-bg" style="background-image:url('assets/hero.jpg')"></div>
+      <!-- If you later upload /assets/hero.jpg this will show automatically -->
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
       <div class="container hero-inner">
         <h1>Turning complexity into clarity</h1>
         <p>We help organisations achieve balanced growth through sharp strategy and practical execution.</p>
@@ -117,7 +120,7 @@
       <div class="container split">
         <div>
           <h2>About Equilibrium</h2>
-          <p>We blend analytical rigour with frontline pragmatism. Our teams work shoulder‑to‑shoulder with clients to deliver outcomes, not slideware.</p>
+          <p>We blend analytical rigour with frontline pragmatism. Our teams work shoulder-to-shoulder with clients to deliver outcomes, not slideware.</p>
         </div>
         <div class="stats">
           <div class="stat"><span class="num">15%+</span><span class="label">average EBITDA uplift</span></div>
