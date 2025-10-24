@@ -3,8 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Equilibrium Consulting</title>
   <meta name="description" content="Equilibrium Consulting — balanced strategy, operational excellence, and measurable impact.">
+
+  <!-- Force correct relative paths -->
+  <base href="/Equilibrium-brochure/">
 
   <!-- Social sharing -->
   <meta property="og:title" content="Equilibrium Consulting">
@@ -130,7 +134,7 @@
         nav.style.display = open ? 'none' : 'flex';
       });
     }
-    // Year
+    // Year auto-update
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
