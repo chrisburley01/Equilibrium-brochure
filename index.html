@@ -3,15 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title>Equilibrium Consulting</title>
   <meta name="description" content="Equilibrium Consulting — balanced strategy, operational excellence, and measurable impact.">
 
-  <!-- Open Graph / Social Sharing -->
+  <!-- Social sharing -->
   <meta property="og:title" content="Equilibrium Consulting">
   <meta property="og:description" content="Balanced strategy, operational excellence, measurable impact.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://chrisburley01.github.io/Equilibrium-brochure/assets/hero_strategy_meeting.jpg">
+  <meta property="og:image" content="https://chrisburley01.github.io/Equilibrium-brochure/Assets/hero_strategy_meeting.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Fonts & Styles -->
@@ -20,17 +19,17 @@
   <link rel="stylesheet" href="styles.css">
 
   <!-- Favicon -->
-  <link rel="icon" href="assets/logo.svg">
+  <link rel="icon" href="Assets/logo.svg">
 </head>
 <body>
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#home">
-        <img src="assets/logo.svg" alt="Equilibrium Consulting" class="logo" />
+        <img src="Assets/logo.svg" alt="Equilibrium Consulting" class="logo" />
         <span>Equilibrium Consulting</span>
       </a>
-      <button class="hamburger" id="hamburger">☰</button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
       <nav class="nav" id="nav">
         <a href="#capabilities">Capabilities</a>
         <a href="#team">Team</a>
@@ -42,32 +41,43 @@
   <main id="home">
     <!-- Hero -->
     <section class="hero">
-      <img src="assets/hero_strategy_meeting.jpg" alt="Strategy meeting" class="hero-img" loading="eager" width="1600" height="900"/>
-      <div class="hero-inner">
+      <img src="Assets/hero_strategy_meeting.jpg" alt="Strategy meeting" class="hero-img" loading="eager" width="1600" height="900"/>
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
         <h1>Turning complexity into clarity</h1>
         <p>We help organisations achieve balanced growth through sharp strategy and practical execution.</p>
-        <a href="#contact" class="btn">Speak to us</a>
+        <a href="#contact" class="btn btn-light">Speak to us</a>
       </div>
     </section>
 
     <!-- Capabilities -->
     <section id="capabilities" class="section">
-      <div class="container cap-grid">
-        <article class="cap">
-          <img src="assets/warehouse_ops.jpg" alt="Warehouse operations" loading="lazy" width="1600" height="900"/>
-          <h3>Operations & Supply Chain</h3>
-          <p>Lean operations, logistics optimisation, and performance uplift across the value chain.</p>
-        </article>
-        <article class="cap">
-          <img src="assets/transport_logistics.jpg" alt="Transport logistics" loading="lazy" width="1600" height="900"/>
-          <h3>Transport & Logistics</h3>
-          <p>End-to-end optimisation for network, inventory and fleet utilisation.</p>
-        </article>
-        <article class="cap">
-          <img src="assets/digital_dashboard.jpg" alt="Digital dashboard" loading="lazy" width="1600" height="900"/>
-          <h3>Digital & AI</h3>
-          <p>Pragmatic digital roadmaps, data strategy, and AI adoption that deliver measurable ROI.</p>
-        </article>
+      <div class="container">
+        <h2>Capabilities</h2>
+        <p class="section-lead">From boardroom choices to shop-floor impact — we connect strategy to execution.</p>
+        <div class="cap-grid">
+          <article class="cap card">
+            <img src="Assets/warehouse_ops.jpg" alt="Warehouse operations" loading="lazy" width="1600" height="900"/>
+            <div class="cap-body">
+              <h3>Operations & Supply Chain</h3>
+              <p>Lean operations, logistics optimisation, and performance uplift across the value chain.</p>
+            </div>
+          </article>
+          <article class="cap card">
+            <img src="Assets/transport_logistics.jpg" alt="Transport logistics" loading="lazy" width="1600" height="900"/>
+            <div class="cap-body">
+              <h3>Transport & Logistics</h3>
+              <p>End-to-end optimisation for network design, inventory and fleet utilisation.</p>
+            </div>
+          </article>
+          <article class="cap card">
+            <img src="Assets/digital_dashboard.jpg" alt="Digital dashboard" loading="lazy" width="1600" height="900"/>
+            <div class="cap-body">
+              <h3>Digital & AI</h3>
+              <p>Pragmatic digital roadmaps, data strategy, and AI adoption that deliver measurable ROI.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -75,19 +85,25 @@
     <section id="team" class="section alt">
       <div class="container">
         <h2>Leadership</h2>
-        <img src="assets/team_leadership.jpg" alt="Leadership team" class="team-img" loading="lazy" width="1600" height="900"/>
-        <p>Our partners bring deep expertise across strategy, operations and digital.</p>
+        <img src="Assets/team_leadership.jpg" alt="Leadership team" class="team-img" loading="lazy" width="1600" height="900"/>
+        <p>Partner-led delivery with deep expertise across strategy, operations and digital.</p>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact us</h2>
-        <form id="contactForm" action="https://formspree.io/f/your-id" method="POST">
-          <label>Name <input type="text" name="name" required></label>
-          <label>Email <input type="email" name="email" required></label>
-          <label>Message <textarea name="message" required></textarea></label>
+    <section id="contact" class="section cta">
+      <div class="container split">
+        <div>
+          <h2>Start a conversation</h2>
+          <p>Tell us your challenge. We’ll reply within one business day with a point of view and next steps.</p>
+        </div>
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/your-id" method="POST">
+          <div class="grid-2">
+            <label>Full name<input type="text" name="name" required></label>
+            <label>Work email<input type="email" name="email" required></label>
+          </div>
+          <label>Company<input type="text" name="company"></label>
+          <label>What are you trying to solve?<textarea name="message" rows="6" required></textarea></label>
           <button type="submit" class="btn">Send</button>
         </form>
       </div>
@@ -97,6 +113,10 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <span>© <span id="year"></span> Equilibrium Consulting</span>
+      <nav class="foot-nav">
+        <a href="#privacy">Privacy</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </footer>
 
@@ -104,13 +124,13 @@
     // Mobile nav
     const nav = document.getElementById('nav');
     const burger = document.getElementById('hamburger');
-    if(burger){
-      burger.addEventListener('click',()=> {
-        const open = nav.style.display==='flex';
+    if (burger) {
+      burger.addEventListener('click', () => {
+        const open = nav.style.display === 'flex';
         nav.style.display = open ? 'none' : 'flex';
       });
     }
-    // Year auto-update
+    // Year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
